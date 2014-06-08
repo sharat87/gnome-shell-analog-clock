@@ -44,8 +44,11 @@ function redraw(area) {
     let hour = now.getHours();
     let [width, height] = area.get_surface_size();
     let cr = area.get_context();
-    // FIXME: Throws errors while in lock screen.
-    Clutter.cairo_set_source_color(cr, actor.get_theme_node().get_foreground_color());
+    try {
+        Clutter.cairo_set_source_color(cr, actor.get_theme_node().get_foreground_color());
+    } catch (e) {
+        return;
+    }
     cr.translate(Math.floor(width/2), Math.floor(height/2));
 
     // Dial circle
