@@ -1,0 +1,8 @@
+{
+  "name": "Analog Clock",
+  "description": "Adds a small analog clock to the left of the time/date display.",
+  "version": 1,
+  "original-author": "obneq, l300lvl",
+  "shell-version": ["3.10"],
+  "uuid": "analog-clock@sharats.me"
+}
