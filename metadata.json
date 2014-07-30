@@ -1,8 +1,8 @@
 {
   "name": "Analog Clock",
   "description": "Adds a small analog clock to the left of the time/date display.",
-  "version": 1,
   "original-author": "obneq, l300lvl",
   "shell-version": ["3.10"],
+  "url": "https://github.com/sharat87/gnome-shell-analog-clock",
   "uuid": "analog-clock@sharats.me"
 }
