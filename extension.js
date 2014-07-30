@@ -52,13 +52,13 @@ function redraw(area) {
     cr.translate(Math.floor(width/2), Math.floor(height/2));
 
     // Dial circle
-    cr.arc(0, 0, Math.floor(height/2) - 3, 0, 7);
+    cr.arc(0, 0, Math.floor(height/2) - 3, 0, 2 * Math.PI);
     cr.setLineWidth(1.5);
     cr.stroke();
     cr.setLineWidth(1);
 
     // Central dot
-    cr.arc(0, 0, 1.5, 0, 7);
+    cr.arc(0, 0, 1.5, 0, 2 * Math.PI);
     cr.fill();
 
     // Hours hand

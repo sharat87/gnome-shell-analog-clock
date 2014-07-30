@@ -3,4 +3,5 @@
 SHELL = /bin/bash
 
 package:
-	zip extension.zip *
+	rm -f extension.zip
+	zip extension.zip * -x Makefile
